@@ -121,15 +121,14 @@ namespace VirtusGroup.API.Controllers
 
         }
 
-        [BasicAuth]
+        //[BasicAuth]
+        [Authorize]
         [HttpPost]
         public IHttpActionResult PostPVOmorfia([FromBody] PVOmorfia jvo)
         {
             string clientIp = HttpContext.Current.Request.UserHostAddress;
             WriteLog.writeLog("Incoming Client Request from IP: " + clientIp + "" + Environment.NewLine + "Action:POOmorfia/PostPVOmorfia");
             var request = HttpContext.Current.Request;
-            var username = request.Headers["username"];
-            var password = request.Headers["password"];
            
             List<PostVoucherResponse> getData = new List<PostVoucherResponse>();
             try

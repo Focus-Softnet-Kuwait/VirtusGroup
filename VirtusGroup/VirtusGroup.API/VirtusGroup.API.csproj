@@ -228,6 +228,7 @@
     </Compile>
     <Compile Include="JwtValidationHandler.cs" />
     <Compile Include="Models\ApiResponse.cs" />
+    <Compile Include="Models\AuthenticationResult.cs" />
     <Compile Include="Models\HashData.cs" />
     <Compile Include="Models\JVOmorfia.cs" />
     <Compile Include="Models\JVOmorfiaBody.cs" />
